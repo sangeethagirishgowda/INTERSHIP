@@ -1,0 +1,92 @@
+/* Import a classy font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap');
+
+body {
+    background: linear-gradient(135deg, #f5e6d3, #e8d8c3);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.resume-container {
+    max-width: 750px;
+    margin: 80px auto 40px;
+    padding: 30px;
+    background: #fffaf3;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Floating Header Bar */
+.header {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    background: linear-gradient(90deg, #8b5e3c, #c49a6c);
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+.header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Sections */
+.section {
+    margin-top: 30px;
+}
+
+.section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #8b5e3c;
+    border-left: 4px solid #c49a6c;
+    padding-left: 10px;
+    margin-bottom: 12px;
+}
+
+/* Lists */
+.section ul {
+    padding-left: 20px;
+}
+
+.section ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: #444;
+    position: relative;
+}
+
+/* Vintage bullet style */
+.section ul li::marker {
+    color: #c49a6c;
+}
+
+/* Subtle divider */
+.section:not(:last-child) {
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 15px;
+}
+
+/* Hover effect (modern touch) */
+.resume-container:hover {
+    transform: translateY(-3px);
+    transition: 0.3s ease;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
